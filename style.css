@@ -1,0 +1,17 @@
+body {background-color:#f3b3c4}
+
+ul {color:rgb(36, 10, 184)}
+
+#marvel {position: sticky;
+        top: 0;
+    background-color: #f3b3c4;}
+
+.iniciarsesion{display: inline-block;
+    padding: 15px;
+    border: 2px solid rgb(203, 6, 6)}
+
+.registrarse{display: inline-block;
+            padding: 15px;
+            border: 2px solid rgb(203, 6, 6)}
+
+#escudo {width: 100px;}
