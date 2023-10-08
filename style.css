@@ -1,17 +1,61 @@
-body {background-color:#f3b3c4}
+.header {
+    display: flex;
+    position: sticky; top: 0px; background-color: #cec098; font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+#escudo {position: sticky; top: 8px; width: 55px;}
+
+body {background-color:#cec098; margin-top: 0px;}
+
+.b{font-weight: bold}
 
 ul {color:rgb(36, 10, 184)}
 
-#marvel {position: sticky;
-        top: 0;
-    background-color: #f3b3c4;}
+.inicio {display: inline-block; padding: 15px; border: 2px solid #543e00}
 
-.iniciarsesion{display: inline-block;
-    padding: 15px;
-    border: 2px solid rgb(203, 6, 6)}
+.iniciarsesion{display: inline-block; padding: 15px;}
+#separadorinicio {display: inline-block; color: #543e00;}
+.registrarse{display: inline-block; padding: 15px;}
 
-.registrarse{display: inline-block;
-            padding: 15px;
-            border: 2px solid rgb(203, 6, 6)}
+@media only screen and (max-width: 576px){
 
-#escudo {width: 100px;}
+    .header {display: flex; position: sticky; top: 0px; background-color: #f1a2ff; font-size: 16px; align-items: center; justify-content: center;}
+
+    body {background-color:#f1a2ff; margin-top: 0px;}
+
+    .titulo{display:flex ; justify-content: center; font-family:Verdana, sans-serif}
+    .texto{padding: 20px; font-size: 15.5px;}
+
+    .fases{display: flex; font-size: 30px; justify-content: center; align-items: center;}
+    .portada {width: 135px; height: 200px;}
+
+    .portadas1 {display: flex; align-items:baseline; justify-content: space-evenly; flex-wrap: wrap; font-size: 12px;}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .header {display: flex; position: sticky; top: 0px; background-color: #f4ff5d; font-size: 16px; align-items: center; justify-content: center;}
+
+    body {background-color:#f4ff5d; margin-top: 0px;}
+
+    .titulo{display:flex ; justify-content: center; font-family:Verdana, sans-serif}
+    .texto{padding: 20px; font-size: 16.5px;}
+    
+    .fases{display: flex; font-size: 37.50px; justify-content: center; align-items: center;}
+    .portada {width: 165px; height: 230px;}
+    
+    .portadas1 {display: flex; align-items:baseline; justify-content: space-evenly; flex-wrap: wrap; font-size: 15px;}
+}
+
+@media only screen and (min-width: 768px){ 
+    body {background-color:#cec098; margin-top: 0px;}   
+.titulo{display:flex ; justify-content: center; font-family:Verdana, sans-serif}
+.texto{padding: 20px; font-size: 17.5px;}
+
+.fases{display: flex; font-size: 50px; justify-content: center; align-items: center;}
+.portada {width: 215px; height: 300px;}
+
+.portadas1 {display: flex; align-items:baseline; justify-content: space-evenly; flex-wrap: wrap;}
+}
+
