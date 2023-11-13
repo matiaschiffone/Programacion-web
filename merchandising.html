@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="mijava.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid" >
+            <a class="navbar-brand" href="#"><h3>Marvel Studios</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="cronologico.html">Orden cronologico</a>
+                <a class="nav-link" href="salida.html">Orden de salida</a>
+                <a class="nav-link" href="merchandising.html">Merchandising</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="fases">Merchandising Oficial</div>
+        <br>
+
+        <div class="texto">
+            ¡Bienvenido a nuestro universo de Marvel, donde la emoción y la magia se encuentran con el estilo en cada rincón! En nuestra tienda, no solo vendemos merchandising de Marvel, sino que <span class="b">ofrecemos la oportunidad de llevar contigo la esencia y el poder de tus héroes favoritos.</span>
+
+            <br><br>Explora nuestro catálogo cuidadosamente seleccionado, donde cada artículo es más que una simple pieza de mercancía; es una declaración de <span class="b">tu devoción</span> por el incomparable mundo de Marvel. Desde <span class="b">gorras vibrantes</span> hasta <span class="b">camisetas que despiertan el superhéroe en ti</span>, nuestro merchandising está diseñado para reflejar tu pasión por los icónicos personajes y las emocionantes historias que han cautivado a generaciones.
+
+            <br><br>La calidad es nuestra obsesión, y cada artículo está creado con atención al detalle para garantizar que recibas productos que no solo cumplan, sino que <span class="b">superen</span> tus expectativas. Además, actualizamos constantemente nuestro inventario para ofrecerte las últimas novedades y los diseños más exclusivos que harán que destaque tu colección de Marvel.
+
+            <br><br>Ya sea que estés buscando el regalo perfecto para un verdadero fan o simplemente desees consentirte con algo especial, nuestra tienda es tu destino definitivo para todo lo relacionado con Marvel. <span class="b">¡Descubre el merchandising que hará que tus superpoderes brillen con un brillo único!</span>
+            
+            <br><br>Sumérgete en el emocionante mundo de Marvel con nosotros y lleva contigo la magia, la aventura y el poder de tus héroes favoritos. <span class="b">¡Bienvenido a la tienda donde los sueños de los superhéroes se hacen realidad!</span>
+        </div>
+
+        <br>
+
+        <div id="cart">
+            <div class="product" id="product1">
+                <img src="https://www.emp-online.es/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6dcc432f/images/3/9/8/8/398891a.jpg?sfrm=png" alt="Camiseta Iron Man">
+                <h3>Camiseta Iron Man</h3>
+                <p>Precio: $5000</p>
+                <button onclick="addToCart('Camiseta Iron Man', 5000)">Agregar al carrito</button>
+            </div>
+    
+            <div class="product" id="product2">
+                <img src="https://m.media-amazon.com/images/I/61k+2idq2ZL.jpg" alt="Taza Thor">
+                <h3>Taza Thor</h3>
+                <p>Precio: $1500</p>
+                <button onclick="addToCart('Taza Thor', 1500)">Agregar al carrito</button>
+            </div>
+
+            <div class="product" id="product3">
+                <img src="https://m.media-amazon.com/images/I/81cZIlrfxZL._AC_UY1000_.jpg" alt="Gorra Capitan America">
+                <h3>Gorra Capitan America</h3>
+                <p>Precio: $3000</p>
+                <button onclick="addToCart('Gorra Capitan America', 3000)">Agregar al carrito</button>
+            </div>
+    
+            <!-- Agrega más productos según sea necesario -->
+        </div>
+    
+        <div id="cart-container">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="clearCart()">Vaciar Carrito</button>
+            <button onclick="checkout()">Finalizar Compra</button>
+            <div id="success-message">¡Compra realizada con éxito!</div>
+        </div>
+
+    </main>
+
+</body>
+</html>
